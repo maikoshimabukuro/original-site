@@ -1,0 +1,336 @@
+body{
+  margin:0px;
+  background-image: url("image/kiiroihana.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.site-logo{
+  mar-left: 100px;
+}
+
+
+
+.section {
+  width: 100%;
+  height: 800px;
+  background: center center /cover no-repeat fixed;
+  background-size: cover;
+}
+
+
+.contents2{
+  padding-top: 10px;
+}
+
+.box{
+  text-align: center;
+  background-color: white;
+  width:500px;
+  margin:100px auto;
+  margin-top: 400px;
+  opacity: 0.9;
+  margin-top: 100px;
+}
+
+.scroll{
+  font-size: 30px;
+  font-weight: bold;
+  font-style: oblique;
+  color: #777777
+}
+
+.image-round1{
+  width: 70%;
+  height: 70%;
+}
+
+
+.moji{
+  margin-top: 50px;
+  margin-right: 80px;
+  margin-left: 80px;
+  word-wrap: break-word;
+  font-weight: lighter;
+  color: black;
+  font-size: 17px;
+}
+
+.moji1{
+  padding-top: 100px;
+  font-weight: bold;
+  font-size: 35px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.moji1:before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  display: inline-block;
+  width: 130px;
+  height: 5px;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+
+
+
+.moji9999 {
+  margin-top: 300px;
+  word-wrap: break-word;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.hidden_box1 {
+  margin: 2em 0;/*前後の余白*/
+  padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box1 label {
+  padding: 15px;
+  font-weight: bold;
+  border: solid 2px black;
+  cursor :pointer;
+
+  display: inline-block;
+  text-decoration: none;
+  color: #003366;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #336699;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .6s;
+
+}
+
+/*ボタンホバー時*/
+.hidden_box1 label:hover {
+  background: yellow;
+  background-color: #003366;
+  border: double white;
+  color: white;
+}
+
+/*チェックは見えなくする*/
+.hidden_box1 input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box1 .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box1 input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+
+
+.hidden_box2 {
+  margin: 2em 0;/*前後の余白*/
+  padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box2 label {
+  padding: 15px;
+  font-weight: bold;
+  border: solid 2px black;
+  cursor :pointer;
+
+  display: inline-block;
+  text-decoration: none;
+  color: #440000;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #440000;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .6s;
+
+}
+
+
+/*ボタンホバー時*/
+.hidden_box2 label:hover {
+  background: #660000;
+
+  color: white;
+  border: double white;
+}
+
+/*チェックは見えなくする*/
+.hidden_box2 input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box2 .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box2 input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+
+
+
+
+.hidden_box3 {
+  margin: 2em 0;/*前後の余白*/
+  padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box3 label {
+  padding: 15px;
+  font-weight: bold;
+  border: solid 2px black;
+  cursor :pointer;
+
+  display: inline-block;
+  text-decoration: none;
+  color: #FF9933;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #FF9933;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .6s;
+
+}
+
+
+/*ボタンホバー時*/
+.hidden_box3 label:hover {
+  background: #FF9933;
+
+  color: white;
+  border: double white;
+}
+
+/*チェックは見えなくする*/
+.hidden_box3 input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box3 .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box3 input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+.bg{
+  background-size: cover;
+  position: absolute; top:0px; left:0px;
+  position: fixed;
+  width: 100%;
+  height:100%;
+  background-color: white;
+  opacity: 0.4;
+}
+
+.site-header{
+  background: #fff;
+  display: flex;
+  padding: 20px 10px;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.site-logo img{
+  height: 10px;
+  width: auto;
+}
+
+.gnav__menu{
+  display: flex;
+}
+.gnav__menu__item{
+  margin-left: 20px;
+}
+.gnav__menu__item a{
+  color: #333;
+  text-decoration: none;
+}
+.hero{
+  max-height: 500px;
+  overflow: hidden;
+}
+.hero img{
+  height: auto;
+  width: 100%;
+}
+
+header{
+  position: fixed;
+  z-index: 2;
+
+  height: 80px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+
+
+
+.contents2{
+  position: ;
+  z-index: 1;
+  height: 10px;
+}

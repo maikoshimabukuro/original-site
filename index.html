@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+  <header class="site-header">
+    <h1 class="site-logo"><h1>maiko</h1>
+    <nav class="gnav">
+      <ul class="gnav__menu">
+        <li class="gnav__menu__item"><a href="https://www.instagram.com/">intragram</a></li>
+
+        <li class="gnav__menu__item"><a href="https://twitter.com/">twitter</a></li>
+        <li class="gnav__menu__item"><a href="">Recruit</a></li>
+        <li class="gnav__menu__item"><a href="">News</a></li>
+        <li class="gnav__menu__item"><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+    <!--省略-->
+  <!-- </div> -->
+
+
+
+
+  <div class="bg">
+  </div>
+
+  <div class="contents2">
+    <h1 class="moji9999">aaaaaaaaaaaaaaaa</h1>
+    <div class="box">
+      <a href="#slide" class="scroll">start</a>
+
+      <br><br><br><br><br><br><br><br>
+      <h1 id="slide">----------------</h1>
+
+      <h1 class="moji1">who i am</h1>
+      <h1 class="moji">島袋　麻衣子。ニックネームはマイズ。</h1>
+      <h1 class="moji">建築士の父と検査技師の母の元に生まれた家族で唯一の文系。二人の兄がいる三人兄弟の末っ子。</h1>
+      <h1 class="moji">沖縄生まれ沖縄育ちの沖縄大好き人間。</h1>
+      <h1 class="moji">最近のハマりはランニング。ついにワイヤレスイヤホンをゲット。</h1>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+<div class="hidden_box1">
+    <label for="label">university</label>
+    <input type="checkbox" id="label"/>
+    <div class="hidden_show">
+      <!--非表示ここから-->
+      <h1 class="moji">琉球大学　観光産業科学部　観光科学科　３年次。ゼミは観光社会学で、卒論は青年会やエイサーについて研究する予定。</h1>
+      <br>
+
+      <!--ここまで-->
+    </div>
+</div>
+
+
+<div class="hidden_box2">
+    <label for="label2">taiwan</label>
+    <input type="checkbox" id="label2"/>
+    <div class="hidden_show">
+      <!--非表示ここから-->
+      <h1 class="moji">台湾に1年間いたので英語より中国語の方が喋れる。アルバイトは免税の対応で日々中国人たちと戦ってる。</h1>
+<br>
+      <!--ここまで-->
+    </div>
+</div>
+
+
+    </div>
+  </div>
+
+
+
+
+</body>
+
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+  // TODO: ここにjQueryのコードを追加！
+  jQuery.easing.quart = function (x, t, b, c, d) {
+    return -c * ((t=t/d-1)*t*t*t - 1) + b;
+};
+
+$(function(){
+    jQuery('.scroll').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var $target = jQuery(this.hash);
+            $target = $target.length && $target || jQuery('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+            var targetOffset = $target.offset().top;
+            jQuery('html,body').animate({ scrollTop: targetOffset }, 2000, 'quart');
+            return false;
+            }
+        }
+    });
+});
+
+$(function(){
+    $('a img').hover(function(){
+    $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+    }, function(){
+        if (!$(this).hasClass('currentPage')) {
+        $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+        }
+    });
+});
+
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="01style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+</head>
+
+
+<body>
+
+  <header class="site-header">
+    <h1 class="site-logo"><h1>maiko</h1>
+    <nav class="gnav">
+      <ul class="gnav__menu">
+        <li class="gnav__menu__item"><a href="https://www.instagram.com/">intragram</a></li>
+
+        <li class="gnav__menu__item"><a href="https://twitter.com/">twitter</a></li>
+        <li class="gnav__menu__item"><a href="">Recruit</a></li>
+        <li class="gnav__menu__item"><a href="">News</a></li>
+        <li class="gnav__menu__item"><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="bg">
+
+  </div>
+
+
+  <div class="contents2">
+    <h1 class="moji9999">maiko shimabukuro</h1>
+    <div class="box">
+      <a href="#slide" class="scroll">Begin</a>
+      <br><br><br><br><br><br><br><br>
+      <h1 id="slide">--------------</h1>
+<br><br>
+<img class="image-round1" src="image/introduction2.jpg" />
+      <h1 class="moji1">who i am</h1>
+
+
+      <h1 class="moji">島袋　麻衣子。</h1>
+      <h1 class="moji">建築士の父と検査技師の母の元に生まれた家族で唯一の文系。二人の兄がいる三人兄弟の末っ子。</h1>
+      <h1 class="moji">沖縄生まれ沖縄育ちの沖縄大好き人間。</h1>
+      <h1 class="moji">最近のハマりはランニング。</h1>
+      <br><br><br><br><br><br><br><br>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="01style.css" >
+
+
+
+      <div class="hidden_box1">
+        <label for="label">university</label>
+        <input type="checkbox" id="label"/>
+        <div class="hidden_show">
+          <!--非表示ここから-->
+          <h1 class="moji">琉球大学　観光産業科学部　観光科学科　３年次。
+            ゼミは観光社会学で、卒論はエイサーや青年会が地域社会に与える影響や、地域の関わり方についてについて研究する予定。</h1>
+          <img src="image/zemi.jpg" alt=""　width="230" height="230">
+          <br>
+<br>
+          <!--ここまで-->
+        </div>
+      </div>
+
+
+      <div class="hidden_box2">
+        <label for="label2">taiwan</label>
+        <input type="checkbox" id="label2"/>
+        <div class="hidden_show">
+          <!--非表示ここから-->
+          <h1 class="moji">英語より中国語の方が喋れる。中国人、実はめっちゃいい人ばかり。
+          <br><br>我是島袋麻衣子，現在學習寫程式。其實我現在完全聴不懂老師和你們說明什麼。但是我希望未來能理解這様的文字。
+        </h1>
+<img src="image/ryuugaku.jpg" alt=""　width="230" height="230">
+          <br>
+          <!--ここまで-->
+        </div>
+      </div>
+
+
+      <div class="hidden_box3">
+        <label for="label3">Dream</label>
+        <input type="checkbox" id="label3"/>
+        <div class="hidden_show">
+          <!--非表示ここから-->
+          <h1 class="moji">夢は世界一周。
+            <br>あとは、兄と中国人向けに粉ミルクを輸出する事業をすることと、父の絵を自分のサイトを作って販売すること。
+          </h1>
+      <img src="image/milk.jpg" alt=""　width="230" height="230">
+          <br>
+          <!--ここまで-->
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+
+</body>
+
+
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+// TODO: ここにjQueryのコードを追加！
+jQuery.easing.quart = function (x, t, b, c, d) {
+  return -c * ((t=t/d-1)*t*t*t - 1) + b;
+};
+
+$(function(){
+  jQuery('.scroll').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var $target = jQuery(this.hash);
+      $target = $target.length && $target || jQuery('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        jQuery('html,body').animate({ scrollTop: targetOffset }, 2000, 'quart');
+        return false;
+      }
+    }
+  });
+});
+
+$(function(){
+  $('a img').hover(function(){
+    $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+  }, function(){
+    if (!$(this).hasClass('currentPage')) {
+      $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+    }
+  });
+});
+
+</script>
+
+
+</script>
+
+
+
+</html>
